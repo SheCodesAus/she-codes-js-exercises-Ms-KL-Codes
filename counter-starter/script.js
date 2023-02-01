@@ -40,9 +40,40 @@
 
 // Step 7: Increment the add value by different amounts by editing the html value within the input button and adding a step reference to talk to this increment. We replace the +1 in the function code to step. Note: change the value in HTML to increase the step (up)
 
-function add(step) {
+// function add(step) {
+//     let numberElement = document.getElementById("number");
+//     let number = numberElement.innerText;
+//     number = parseInt(number) + step;
+//     numberElement.innerText = number;
+//     }
+
+// CHALLENGE:
+// 1 - use new function to add 2 new buttons for subtracting by 1 and 10 respectively
+
+function add_or_subtract(step) {
     let numberElement = document.getElementById("number");
     let number = numberElement.innerText;
     number = parseInt(number) + step;
     numberElement.innerText = number;
     }
+    
+// name changed to add_or_subtract to reflect accurate functionality
+
+// CHALLENGE:
+// 2 - Add new functions for multiplication and division.
+
+function multiplication(step) {
+    let numberElement = document.getElementById("number");
+    let number = numberElement.innerText;
+    number = parseInt(number) * step;
+    numberElement.innerText = number;
+    }
+
+function division(step) {
+    let numberElement = document.getElementById("number");
+    let number = numberElement.innerText;
+    number = parseInt(number) / step;
+    numberElement.innerText = number;
+    }
+
+// Challenge 3 - Try adding an input field, so instead of using your buttons, the user types in what number they want to add/subtract.

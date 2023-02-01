@@ -15,12 +15,27 @@
         <div id="wrapper">
             <!-- Step 4: returns the 0 number below in the console based on the code entered in script.js. It finds the id "number", looks at the 0 - which is the innerText and logs into the console -->
             <p id="number">0</p>
+
+                <!-- Challenge 1 - use new function to add 2 new buttons for subtracting by 1 and 10 respectively -->
+                <input type="button" value="-10" id="subtraction" onclick="add_or_subtract(-10)" />
+                <input type="button" value="-1" id="subtraction" onclick="add_or_subtract(-1)" />
+                <!-- name changed to add_or_subtract to reflect accurate functionality -->
+
                 <!-- Step 1: Create the button: -->
                 <!-- Step 3: onclick added to talk to script mentioned below -->
                 <!-- Step 7: added a parameter value="+1" and add(1) to increment how much the + function goes up by. This will be finished in the function using STEP. Make sure add(X) and value = "+X" numbers match -->
-                <input type="button" value="+1" id="addition" onclick="add(1)" />
+                <input type="button" value="+1" id="addition" onclick="add_or_subtract(1)" />
                 <!-- Step 8: add another button to increase number by 10 -->
-                <input type="button" value="+10" id="addition" onclick="add(10)" />
+                <input type="button" value="+10" id="addition" onclick="add_or_subtract(10)" />
+
+                <!-- Challenge 2 - Add new functions for multiplication and division. --> 
+                <input type="button" value="/10" id="multiplication" onclick="division(10)" />
+                <input type="button" value="/1" id="division" onclick="division(1)" />
+                <input type="button" value="x1" id="multiplication" onclick="multiplication(1)" />
+                <input type="button" value="x10" id="multiplication" onclick="multiplication(10)" />
+
+                <!-- Challenge 3 - Try adding an input field, so instead of using your buttons, the user types in what number they want to add/subtract. -->
+
             <div id="button-wrapper"></div>
         </div>
         <!-- Step 3: use script.js file and call the function when the button is clicked -->
