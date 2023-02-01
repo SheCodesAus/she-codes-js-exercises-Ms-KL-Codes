@@ -6,6 +6,11 @@ function showMessage() {
     // step 5: get the message from the textbox that user inputs
     let message = document.getElementById("message-text").value;
     // console.log(message);
+    // Challenge 2:  Alter the output to also show the user’s name
+    let name = document.getElementById("name-text").value;
+    message = message + " - " + name;
+        // looks at name entered
+        // adds values together and changes message variable for correct output
     // Step 10: display the message within the speech bubble and box created by window.onload
     let messageBox = document.getElementById("message-box");
         // looks at the window.onload and refers to the message-box p tags initalised within it. windows.onload created this element after html loaded, making it available to this function
