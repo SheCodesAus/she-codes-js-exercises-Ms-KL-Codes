@@ -13,8 +13,17 @@
 
     <body>
         <div id="wrapper">
+            <!-- Step 4: returns the 0 number below in the console based on the code entered in script.js. It finds the id "number", looks at the 0 - which is the innerText and logs into the console -->
             <p id="number">0</p>
+                <!-- Step 1: Create the button: -->
+                <!-- Step 3: onclick added to talk to script mentioned below -->
+                <!-- Step 7: added a parameter value="+1" and add(1) to increment how much the + function goes up by. This will be finished in the function using STEP. Make sure add(X) and value = "+X" numbers match -->
+                <input type="button" value="+1" id="addition" onclick="add(1)" />
+                <!-- Step 8: add another button to increase number by 10 -->
+                <input type="button" value="+10" id="addition" onclick="add(10)" />
             <div id="button-wrapper"></div>
         </div>
+        <!-- Step 3: use script.js file and call the function when the button is clicked -->
+        <script src="script.js"></script>
     </body>
 </html>
