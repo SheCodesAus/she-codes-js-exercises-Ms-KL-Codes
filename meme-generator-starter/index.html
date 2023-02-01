@@ -15,11 +15,21 @@
         <h1>Meme Generator</h1>
         <div id="image-url-input" class="inputs">
             <input id="image-url" type="text" placeholder="Image URL here..." />
-            <input type="button" value="Submit" />
+            <!-- <input type="button" value="Submit" /> -->
+            <!-- Step 1: create a function to get save the url for the image:  -->
+            <input type="button" value="Submit" onclick="getImage()" />
         </div>
         <div id="meme-builder">
-            <div id="meme-image-wrapper"></div>
-            <div id="top-text-wrapper" class="inputs"></div>
+            <div id="meme-image-wrapper">
+                <!-- Step 4 after challenge: add element for the new text -->
+                <!-- <h2 id="top-text"></h2> -->
+            </div>
+            <div id="top-text-wrapper" class="inputs">
+                <!-- Step 3 after challenge: add input field for adding text over the top of the template -->
+                <input id="top-text-input" type="text" placeholder="Top text." />
+                <!-- Step 6 after challenge - call the function when button is clicked using the onclick -->
+                <input type="button" value="Submit" onclick="addTopText()" />
+            </div>
             <div id="bottom-text-wrapper" class="inputs"></div>
         </div>
 
