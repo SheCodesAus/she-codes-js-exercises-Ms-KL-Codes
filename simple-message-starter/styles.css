@@ -1,0 +1,54 @@
+body {
+    background-color: #ff9a8a;
+    font-family: sans-serif;
+    color: #2e5a88;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#message-input {
+    width: 300px;
+}
+
+input {
+    font-size: 1.2rem;
+    border: 2px solid #2e5a88;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+
+.speech-bubble {
+    width: 300px;
+    min-height: 100px;
+    margin-top: 10px;
+    position: relative;
+    background: #2e5a88;
+    border-radius: 0.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.speech-bubble p {
+    font-size: 1rem;
+    color: #fff;
+    margin: 10px;
+}
+
+.speech-bubble:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #2e5a88;
+    border-bottom: 0;
+    margin-left: -20px;
+    margin-bottom: -20px;
+}

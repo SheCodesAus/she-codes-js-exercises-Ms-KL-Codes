@@ -1,0 +1,54 @@
+body {
+    background-color: #070d0d;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+ul {
+    padding: 10px;
+    background-color: #fff;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #b30049;
+    padding: 2px;
+    margin: 2px;
+    color: #070d0d;
+    font-size: 1.2rem;
+}
+
+p {
+    margin: 2px;
+}
+
+#new-task-input {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+input {
+    font-size: 1.2rem;
+    border: 2px solid #fff;
+    padding: 6px;
+}
+
+input[type="text"] {
+    flex-basis: 80%;
+}
+input[type="button"]#new-task-button {
+    flex-grow: 1;
+}
+
+input[type="button"] {
+    background: #b30049;
+    color: #fff;
+}
+
+.complete {
+    text-decoration: line-through;
+}
