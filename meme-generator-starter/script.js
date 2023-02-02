@@ -27,6 +27,14 @@ function getImage() {
         // assign the id to this element
     wrapper.appendChild(toptextheaderElement)
         // add the toptext element into wrapper
+    // Final Challenge: Create a new text input and function for adding text of the bottom of the template.
+    let bottomtextheaderElement = document.createElement('h2');
+        // create h2 element 
+    bottomtextheaderElement.id = 'bottom-text';
+        // assign the id to this element
+    wrapper.appendChild(bottomtextheaderElement)
+        // add the toptext element into wrapper
+
     // step 2 solution to challenge: modify the styles to show the meme builder:
     document.getElementById("meme-builder").style.display = "block";
         // using the id meme-builder, lookup in css sheet and reset display to none as per css. then override the style to display as block
@@ -38,6 +46,15 @@ function addTopText() {
     let topText = document.getElementById("top-text-input").value;
         // get the user input from top-text-input id in HTML and assign it to topText
     document.getElementById("top-text").innerText = topText;
+        // get the top-text id in HTML, look between the tags. The text between will be set as topText. This is the user url input from above.
+}
+
+// Final Challenge: Create a new text input and function for adding text of the bottom of the template.
+
+function addBottomText() {
+    let bottomText = document.getElementById("bottom-text-input").value;
+        // get the user input from top-text-input id in HTML and assign it to topText
+    document.getElementById("bottom-text").innerText = bottomText;
         // get the top-text id in HTML, look between the tags. The text between will be set as topText. This is the user url input from above.
 }
 
