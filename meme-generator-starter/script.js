@@ -21,18 +21,18 @@ function getImage() {
         // make wrapper the parent and place the imageBox inside it
     // Step 4 after challenge: add element for the new text
         // adding this way as the h2 element needs to be added after the image. If added to HTML the h2 gets placed before the image
-    let toptextheaderElement = document.createElement('h2');
+    let topTextHeaderElement = document.createElement('h2');
         // create h2 element 
-    toptextheaderElement.id = 'top-text';
+    topTextHeaderElement.id = 'top-text';
         // assign the id to this element
-    wrapper.appendChild(toptextheaderElement)
+    wrapper.appendChild(topTextHeaderElement)
         // add the toptext element into wrapper
     // Final Challenge: Create a new text input and function for adding text of the bottom of the template.
-    let bottomtextheaderElement = document.createElement('h2');
+    let bottomTextHeaderElement = document.createElement('h2');
         // create h2 element 
-    bottomtextheaderElement.id = 'bottom-text';
+    bottomTextHeaderElement.id = 'bottom-text';
         // assign the id to this element
-    wrapper.appendChild(bottomtextheaderElement)
+    wrapper.appendChild(bottomTextHeaderElement)
         // add the toptext element into wrapper
 
     // step 2 solution to challenge: modify the styles to show the meme builder:
@@ -69,7 +69,7 @@ window.onload = function () {
     imageElement.src = " ";
         // added attribute to image
         // https://softauthor.com/javascript-working-with-images/#:~:text=Create%20Image%20Element%20in%20JavaScript,URL%20to%20its%20src%20attribute.&text=Finally%2C%20add%20the%20image%20element,it%20to%20the%20body%20element.
-    let imagewrapperElement = document.getElementById("meme-image-wrapper");
-    imagewrapperElement.appendChild(imageElement);
+    let imageWrapperElement = document.getElementById("meme-image-wrapper");
+    imageWrapperElement.appendChild(imageElement);
 }
 */
