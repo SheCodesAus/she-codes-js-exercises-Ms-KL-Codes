@@ -83,3 +83,35 @@ second line
         console.log("Hi, " + username)
     }
     // sets the variable username (by finding the input ID listed in index "name-text") and sets username the value as the entered username. Then when the console.log is called it fills the username with the value set by the input.
+
+// LOOPS
+    for (let count = 0; count < 10; count++) {
+        console.log(count);
+    }
+    // Loops are useful when we want to do something numerous times.
+
+// ARRAYS
+    // An array is a list of related items or information.
+    let pets = ["Chilli", "Rex", "Roary", "Fleur"];
+    console.log(pets);
+    // prints all pets
+    pets.push("Ivy");
+    // adds a pet at the end of the array
+    console.log(pets);
+    console.log(pets[0]);
+    // prints pet @ 0 = Chilli
+    console.log(pets[3]);
+    // prints pet @ 3 = Fleur
+
+// ARRAY and LOOP
+    //We can loop over items in an array using a standard for loop:
+
+    // for (let index = 0; index < pets.length; index++) {
+    //     console.log(pets[index]);
+    // }
+
+    // We can also loop over items in an array using forEach:
+
+    pets.forEach((pet) => {
+        console.log(pet);
+    });

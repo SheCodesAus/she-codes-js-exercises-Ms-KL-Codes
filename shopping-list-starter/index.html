@@ -23,11 +23,21 @@
                             type="text"
                             placeholder="Milk"
                         />
+<!-- Step 3: But what if we wanted to add to the list? Let’s use the input and submit button to get new items from the user: -->
                         <input
                             id="new-item-button"
                             type="button"
                             value="Submit"
+                            onclick = "addItem()"
                         />
+<!-- Challenge: Clear items in the list -->
+                        <input
+                        id="clear-items-button"
+                        type="button"
+                        value="Clear List"
+                        onclick = "clearShoppingList()"
+                        />
+                        
                     </div>
                 </div>
             </div>
