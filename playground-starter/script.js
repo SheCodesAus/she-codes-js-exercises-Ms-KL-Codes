@@ -115,3 +115,23 @@ second line
     pets.forEach((pet) => {
         console.log(pet);
     });
+
+// CONDITIONALS
+    // We can use if statements to do something based on whether or not some condition was met.
+    // Step 1 - 3:
+    let pet = "Ivy";
+    if (pet === "Chilli") {
+        // add another = (ontop of the == in docs)
+        // === strictly exactly the same
+        // == not exactly the same
+        console.log("Chilli OMG you are the cutest!");
+    } else if (pet == "Ivy") {
+        console.log("Ivy! Naaaaw cute bow.");
+        } else {
+        console.log("The dog is not Chilli or Ivy! OMG so cute.");
+        }
+
+
+
+
+
