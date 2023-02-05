@@ -51,4 +51,5 @@ input[type="button"] {
 
 .complete {
     text-decoration: line-through;
+    color: gray;
 }
