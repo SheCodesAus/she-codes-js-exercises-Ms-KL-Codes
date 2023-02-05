@@ -55,14 +55,16 @@ h2 {
 
 #top-text {
     top: 0;
+    text-align: right;
 }
 
 #middle-text {
-    top: 50%;
+    top: 40%;
 }
 
 #bottom-text {
     bottom: 0;
+    text-align: left;
 }
 
 #meme-image {
@@ -77,3 +79,4 @@ h2 {
 #meme-builder {
     display: none;
 }
+

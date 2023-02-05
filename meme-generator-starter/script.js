@@ -34,6 +34,12 @@ function getImage() {
         // assign the id to this element
     wrapper.appendChild(bottomTextHeaderElement)
         // add the toptext element into wrapper
+    let middleTextHeaderElement = document.createElement('h2');
+        // create h2 element 
+    middleTextHeaderElement.id = 'middle-text';
+        // assign the id to this element
+    wrapper.appendChild(middleTextHeaderElement)
+        // add the toptext element into wrapper
 
     // step 2 solution to challenge: modify the styles to show the meme builder:
     document.getElementById("meme-builder").style.display = "block";
@@ -55,6 +61,13 @@ function addBottomText() {
     let bottomText = document.getElementById("bottom-text-input").value;
         // get the user input from top-text-input id in HTML and assign it to topText
     document.getElementById("bottom-text").innerText = bottomText;
+        // get the top-text id in HTML, look between the tags. The text between will be set as topText. This is the user url input from above.
+}
+
+function addMiddleText() {
+    let middleText = document.getElementById("middle-text-input").value;
+        // get the user input from top-text-input id in HTML and assign it to topText
+    document.getElementById("middle-text").innerText = middleText;
         // get the top-text id in HTML, look between the tags. The text between will be set as topText. This is the user url input from above.
 }
 
