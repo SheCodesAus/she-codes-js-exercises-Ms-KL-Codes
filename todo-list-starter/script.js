@@ -34,7 +34,7 @@ function createNewTodoTaskElement(task, index) {
     // Step 5:we’ll add a button that we will use to mark tasks as complete:
     let completeButtonElement = document.createElement("input");
     completeButtonElement.type = "button";
-    completeButtonElement.value = "Completed";
+    completeButtonElement.value = "✓";
         // input = value
         // text element = innerText
     // Step 6: make button functional
@@ -47,7 +47,7 @@ function createNewTodoTaskElement(task, index) {
 // https://www.javascripttutorial.net/javascript-array-splice/
     let deleteButtonElement = document.createElement("input");
     deleteButtonElement.type = "button";
-    deleteButtonElement.value = "Delete";
+    deleteButtonElement.value = "␡";
     deleteButtonElement.onclick = function () {
         deleteComplete(index);
     };
@@ -57,7 +57,7 @@ function createNewTodoTaskElement(task, index) {
 // https://www.javascripttutorial.net/javascript-array-splice/
 let moveUpButtonElement = document.createElement("input");
 moveUpButtonElement.type = "button";
-moveUpButtonElement.value = "Move Up";
+moveUpButtonElement.value = "↑";
 moveUpButtonElement.onclick = function () {
     moveUp(index);
 };
@@ -67,7 +67,7 @@ newTodoTaskElement.appendChild(moveUpButtonElement);
 // https://www.javascripttutorial.net/javascript-array-splice/
 let moveDownButtonElement = document.createElement("input");
 moveDownButtonElement.type = "button";
-moveDownButtonElement.value = "Move Down";
+moveDownButtonElement.value = "↓";
 moveDownButtonElement.onclick = function () {
     moveDown(index);
 };
