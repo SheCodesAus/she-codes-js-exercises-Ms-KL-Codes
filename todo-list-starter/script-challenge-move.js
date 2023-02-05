@@ -11,6 +11,13 @@ let todoTasksStatus = [
     //false, true, false
 ];
 
+// CHALLENGE
+let moveUpStatus = [
+    // true = up
+    // false = default
+]
+
+
 // Step 2:
 let todoList = document.getElementById("todo-list");
 
@@ -23,6 +30,11 @@ function createNewTodoTaskElement(task, index) {
     // Step 4: how can we tell when it’s complete? Let’s add a class to the tasks that are done
     if (todoTasksStatus[index] == true) {
         newTodoTaskTextElement.classList.add("complete");
+    }
+
+    //CHALLENGE
+    if (moveUpStatus[index] == true) {
+        newTodoTaskTextElement.classList.add("moved up");
     }
 
     // create a new li element and append the p element to
@@ -39,7 +51,29 @@ function createNewTodoTaskElement(task, index) {
     completeButtonElement.onclick = function () {
         toggleComplete(index);
     };
+
     newTodoTaskElement.appendChild(completeButtonElement);
+
+    // CHALLENGE: add up and down buttons to reorder list:
+    let upButtonElement = document.createElement("input");
+    upButtonElement.type = "button";
+    upButtonElement.value = "Move Up";
+    // make button functional
+    upButtonElement.onclick = function () {
+        toggleMove(index);
+    };
+
+    let downButtonElement = document.createElement("input");
+    downButtonElement.type = "button";
+    downButtonElement.value = "Move Down";
+    // make button functional
+    downButtonElement.onclick = function () {
+        toggleMove(index);
+    };
+
+    // CHALLENGE
+    newTodoTaskElement.appendChild(upButtonElement);
+    newTodoTaskElement.appendChild(downButtonElement);
 
     // Step 8: 
     return newTodoTaskElement;
@@ -51,6 +85,7 @@ function addTask() {
     if (newTask.value) {
         todoTasksText.push(newTask.value);
         todoTasksStatus.push(false);
+        moveUpStatus.push(false);
         newTask.value = "";
         updateTodoList();
     }
@@ -82,5 +117,22 @@ function toggleComplete(index) {
     }
     updateTodoList();
 }
+
+function toggleMove(index) {
+    if (moveUpStatus[index] == true) {
+        let tempTodoList = todoList.splice[index];
+        
+
+        
+
+        // temp list = array.splice[index]
+        // push value of index to temp array
+        // splice in the rest of the original list to the end of temp array
+        // replace original list with correct version of temp list
+    }
+    
+    updateTodoList();
+}
+
 // Step 10:s
 updateTodoList();
