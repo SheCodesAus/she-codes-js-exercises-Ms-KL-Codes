@@ -45,30 +45,3 @@ window.onload = function() {
     outputElement.appendChild(speechBubbleElement);
         // this makes outputElement the parent of speechBubbleElement. This will populate within the output div in html and therefor show on the html page
 }
-
-// Homework Challenge: Allow the user to select the colour of the speech bubble and text, from a list of colours.
-// https://stackoverflow.com/a/53356805
-// https://www.javascripttutorial.net/dom/css/add-styles-to-an-element/
-// https://www.w3schools.com/html/html_styles.asp
-// https://www.w3schools.com/jsref/prop_style_bordertopcolor.asp
-// after: https://www.insidethediv.com/select-css-pseudo-element-using-javascript
-
-function changeColor(colorParam) {
-    // find the colors in html, change to lowercase. 
-    // set color as what is selected from options
-    let color = colorParam.value.toLowerCase();
-    var optionElement = document.getElementById(color);
-    optionElement.style.color = color;
-
-    // find the speechbubble, set the color to what is selected above
-    const speechBubble = document.querySelector('.speech-bubble');
-    speechBubble.style.backgroundColor = color;
-
-    // find the pseudo element after within speech bubble
-    // look at the variable --speechBubbleAfterColor created within the css against bordertopcolor
-    // change the property of this element to the selected color above
-    const speechBubbleAfter = window.getComputedStyle(speechBubble, "::after");
-    console.log(speechBubbleAfter.borderTopColor);
-    speechBubble.style.setProperty('--speechBubbleAfterColor', color);
-    console.log(speechBubbleAfter.borderTopColor);
-};

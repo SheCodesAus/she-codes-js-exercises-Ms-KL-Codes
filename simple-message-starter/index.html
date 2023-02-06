@@ -29,9 +29,19 @@
             <!-- Step 1: adding a submit button for the input box -->
             <!-- <input type"button" value="Submit" /> -->
             <!-- Step 3: get the message when button is clicked -->
-            <input type"button" value="Submit" onclick="showMessage()" />
+            <input type="button" value="Submit" onclick="showMessage()" />
         </div>
-        <div id="output"></div>
+        <!-- Homework Challenge: Allow the user to select the colour of the speech bubble and text, from a list of colours. -->
+        <!-- https://stackoverflow.com/a/53356805 -->
+        <div id="output">
+            <select onchange="changeColor(this);" class="color" id="rgb">
+                <option id="red" value="Red">Red</option>
+                <option id="green" value="Green">Green</option>
+                <option id="blue" value="Blue">Blue</option>
+                <option id="white" value="White">White</option>
+                <option id="pink" value="Pink">Pink</option>
+              </select>
+        </div>
         <!-- Step 4: tell html about javascript code reference -->
         <script src="script.js"></script>
     </body>

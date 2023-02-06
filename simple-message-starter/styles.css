@@ -47,7 +47,8 @@ input {
     width: 0;
     height: 0;
     border: 20px solid transparent;
-    border-top-color: #2e5a88;
+    /* border-top-color: #2e5a88; */
+    border-top-color: var(--speechBubbleAfterColor, #2e5a88);
     border-bottom: 0;
     margin-left: -20px;
     margin-bottom: -20px;
