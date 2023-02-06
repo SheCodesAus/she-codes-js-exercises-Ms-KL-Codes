@@ -106,7 +106,7 @@ function random_number_generator () {
     let random_number = Math.floor(Math.random()*199) - 99;
         // http://www.java2s.com/example/javascript/data-type/random-number-between-negative-and-positive-value.html
         // https://gist.github.com/spyesx/bb1742fe863c0b8a0191
-            // floor = make integer
+            // floor = round and make integer
             // random = decimal between 0 -1
                 // random eg 0.001 now = 0 due to floor 
                 // random eg 0.900 now = 1 due to floor
