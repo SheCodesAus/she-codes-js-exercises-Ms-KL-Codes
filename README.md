@@ -1,8 +1,17 @@
-This repo (SheCodesAus/she-codes-js-exercises-Ms-KL-Codes) was created through Github Classroom using my "second/new education " GitHub account Ms-KL-Codes.
-To align with my primary personal account Ms-KL, I have forked this repo into Ms-KL (Ms-KL/she-codes-js-exercises-Ms-KL)
-As a result, I will be updating my code by:
-* logging in as Ms-KL and using the fork within Ms-KL (Ms-KL/she-codes-js-exercises-Ms-KL)
-* pushing changes to that fork
-* Ms-KL will send a pull request to this repo (SheCodesAus/she-codes-js-exercises-Ms-KL-Codes) to merge into it
-* Ms-KL-Codes will approve the merge
-* Ms-KL-Codes will login on local and pull the merged changes down from (SheCodesAus/she-codes-js-exercises-Ms-KL-Codes)
+KEY:
+* She Codes Repo (SCR) = <u>SheCodesAus/she-codes-js-exercises-Ms-KL-Codes</u>
+* Ms-KL Repo (KLR) = <u>Ms-KL/she-codes-js-exercises-Ms-KL</u>
+
+---
+NOTES:
+* Ms-KL = primary personal account
+* Ms-KL-Codes = Requested by She Codes as a 2nd account for education account benefits
+* Ms-KL-Codes created SCR in error ---> Correct owner is Ms-KL 
+* Unable to transfer ownership of SCR from Ms-KL-Codes to Ms-KL 
+* To provide Ms-KL access to SCR, Ms-KL has forked the SCR to KLR
+
+As a result: 
+* Ms-KL will be updating KLR
+* Ms-KL will send a pull request to Ms-KL-Codes to merge KLR into SCR
+* Ms-KL-Codes will approve the merge into SCR
+* Ms-KL-Codes will pull merged SCR changes into local
